@@ -1,0 +1,132 @@
+*
+{
+    /* border:solid; */
+}
+@keyframes a1 
+{
+    from{background-color: darkgoldenrod;}
+    to{background-color: white;}
+}
+body
+{
+    background-color:white;
+    animation-name: a1;
+    animation-duration: 8s;
+}
+.header
+{
+    display: flex;
+    flex-direction: column;
+    background-color:chocolate;
+    border-radius: 10px;
+    
+    /* justify-content: space-between; */
+}
+.header h1
+{
+    margin-left:690px;
+    /* padding-left: 30px; */
+    text-align: center;
+    width: 140px;
+    height: 80px;
+    background-color:wheat;
+    font-family: 'Balsamiq Sans', cursive;;
+    border-radius: 5px;
+    border:5px solid;
+    border-color:skyblue;
+    border-width: 0px;
+    transition: 2s;
+}
+.header h1:hover
+{
+    transform:rotate(360deg);
+    background-color:gold;
+    border-width: 5px;
+    border-color: skyblue;
+    
+}
+.header h3
+{
+    
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+
+}
+.grid
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top:50px;
+}
+.item
+{
+    position: relative;
+    margin: 20px;
+}
+.item img
+{
+    border-radius: 10px;
+    border:5px solid;
+    border-color: black;
+    border-width: 5px;
+}
+.item h1
+{
+    position:absolute;
+    top:30%;
+    left:40%;
+    transform: translate(-30%,-30%);
+    opacity: 0;
+}
+.item:hover h1
+{
+    opacity: 1;
+}
+.item:hover img
+{
+    opacity: 0.5;
+}
+a:link
+{
+    color:white;
+}
+a:visited
+{
+    color:black;
+}
+.footer
+{
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+    height: 150px;
+    background-color: chocolate;
+    border-radius: 10px;
+}
+.footer img
+{
+    transition: 1s;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.footer img:hover
+{
+    transform: scale(2,2);
+    border-radius: 3px;
+    box-shadow: 5px 10px black;
+}
+.main
+{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.para
+{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Potta One', cursive;
+    margin-top: 150px;
+}

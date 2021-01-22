@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FeedBack</title>
+        <script language="JavaScript">
+            function submitbtn(details)
+            {
+                var s = "";
+                alert("Submitted");
+                var a = document.getElementById("text1").innerHTML = document.getElementById("iname").value;
+                var b = document.getElementById("em").innerHTML = document.getElementById("email").value
+                var c =  document.getElementById("rev1").innerHTML = document.getElementById("rev").value
+                var f = "file.csv";
+                var f1 = new ActiveXObject("Excel.Application");
+                var e1 = new ActiveXObject("Excel.Sheet");
+                e1.Application.Visible = true;
+                for(var i = 0;i<10;i++)
+                {
+                    for(var z = 0;z<3;z++)
+                    {
+                       s = a;
+                       e1.ActiveSheet.Cells(i+1,j+1).Value = s;
+                       
+                    }
+                }
+                // var fopen = f1.OpenTextFile(f);
+                // fopen.writeline(details.iname.value+","+details.email.value+","+details.rev.value);
+                // fopen.close();
+            }
+        </script>
+    </head>
+    <body>
+    
+        <form id="details"> 
+            <label>Name</label>
+            <input type = "text" id="iname" placeholder="Enter Your Name">
+            <label>Email</label>
+            <input type = "text" id="email" placeholder="Enter Your Email">
+            <label>Name</label>
+            <input type = "text" id="rev" placeholder="Enter Your FeedBack">
+        </form>
+        <button id="submit" onclick="submitbtn(form);"><p>Submit</p></button>
+        <p id="text1"></p>
+        <p id ="em"></p>
+        <p id="rev1"></p>
+    </body>
+</html>
